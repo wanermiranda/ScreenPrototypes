@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>GDIS SC</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/> 
+	<link rel="stylesheet" type="text/css" href="css/main.css"/> 
+</head>
+<body>
+	<form class="form-horizontal" autocomplete="on">
+  <fieldset>
+    <legend><a href="index.html"><img src="img/G-dis_cemig.png"></a>Configurações </legend>
+    <div class="form-group">
+          <label for="inputServidor" class="col-lg-2 control-label">Servidor * </label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" id="inputServidor" placeholder="Servidor" required>
+
+          </div>
+    </div>    
+    <div class="form-group">
+          <label for="inputPorta" class="col-lg-2 control-label">Porta * </label>
+          <div class="col-lg-10">
+            <input type="number" list="lstPort" class="form-control" id="inputPorta" placeholder="Porta" required>
+            
+            <datalist id="lstPort">
+              <option value="443">
+              <option value="8083">  
+            </datalist>            
+          </div>
+    </div>    
+    <div class="form-group">
+      <label for="inputUsuario" class="col-lg-2 control-label">Usuário * </label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputUsuario" placeholder="Usuário" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword" class="col-lg-2 control-label">Senha * </label>
+      <div class="col-lg-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Senha" required>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button class="btn btn-default">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</body>
+</html>

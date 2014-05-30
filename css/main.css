@@ -1,0 +1,12 @@
+body{
+	margin: 100px!important;
+}
+legend img {
+	margin-bottom: 20px;
+}
+input:invalid {
+  outline: 2px solid red;
+}
+input:focus:invalid {
+  color: red;
+}

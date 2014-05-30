@@ -1,0 +1,6 @@
+config.html
+index.html
+login.html
+servicos.html
+test_comm.html
+turma.html
