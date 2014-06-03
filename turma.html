@@ -26,13 +26,20 @@
     <div class="form-group">
           <label for="inputTelefone" class="col-lg-2 control-label">Telefone * </label>
           <div class="col-lg-10">
-            <input type="tel" class="form-control" id="inputTelefone" placeholder="(ddd)dddd_-dddd" pattern="\(\d{3}\)\d{4,5}\-\d{4}" required> 
+            <input type="tel" class="form-control" id="inputTelefone" placeholder="dd-dddd_-dddd" pattern="\d{2}-\d{4,5}\-\d{4}" required> 
           </div>
     </div>    
     <div class="form-group">
           <label for="inputTipo" class="col-lg-2 control-label">Tipo * </label>
           <div class="col-lg-10">
-            <input type="input" class="form-control" id="inputTipo" placeholder="Tipo" required>
+            <select class="form-control" id="inputTipo" placeholder="Tipo" required>
+                <option value="UMPLA"> UMPLA </option>
+                <option value="DUPLA"> DUPLA </option>
+                <option value="TRIO"> TRIO </option>
+                <option value="QUARTETO"> QUARTETO </option>
+                <option value="MOTO"> MOTO  </option>
+            </select>            
+
           </div>
     </div>
     <div class="form-group">
