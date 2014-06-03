@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS eletricistas(matricula VARCHAR(7) NOT NULL PRIMARY KEY, nome VARCHAR(256) NOT NULL, senha VARCHAR(256) NOT NULL)
+
+CREATE TABLE IF NOT EXISTS turma(veiculo VARCHAR(8) NOT NULL PRIMARY KEY, jornada_ini DATETIME NOT NULL, jornada_fin DATETIME NOT NULL, telefone VARCHAR(14) NOT NULL, tipo VARCHAR(10) NOT NULL, lider VARCHAR(7) NOT NULL, eletricista1 VARCHAR(7), eletricista2 VARCHAR(7), eletricista3 VARCHAR(7))
+
+CREATE TABLE IF NOT EXISTS servicos(servico VARCHAR(8) NOT NULL PRIMARY KEY, qtd_reincid INT NOT NULL, alimentador VARCHAR(10) NOT NULL, equipamento VARCHAR(7) NOT NULL, endereco VARCHAR(256) NOT NULL, numero INT NOT NULL, bairro VARCHAR(256) NOT NULL)
+
+
+INSERT INTO eletricistas(matricula, nome , senha ) values (?, ?, ?)
+
+transaction.executeSql('INSERT INTO eletricistas(matricula, nome , senha ) VALUES (?, ?, ?) ',['c056139', 'Waner Miranda', ' '], nullHandler,errorHandler);
